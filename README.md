@@ -1,5 +1,3 @@
-Sure, here is a README.md file for a hospital management system developed using Node.js, JavaScript, HTML, CSS, and MongoDB:
-
 
 # Hospital Management System
 
