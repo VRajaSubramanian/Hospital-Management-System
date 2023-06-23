@@ -31,7 +31,7 @@ The application is accessible at `localhost:3002`.
 
 ## Credits
 
-* This project was developed by Raja Subramanian V & Vijaya Gokul K.
+* This project was developed by Raja Subramanian V & Vijaya Gokul K @VijayaGokul.
 * The code is licensed under the MIT License.
 
 ## Contact
