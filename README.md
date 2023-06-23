@@ -38,5 +38,3 @@ The application is accessible at `localhost:3002`.
 
 If you have any questions or feedback, please contact rajasubramanianvel@gmail.com
 
-
-This is just a basic example, you can add more information to the README file, such as a table of contents, instructions on how to use the system, and credits for any third-party libraries that you used.
