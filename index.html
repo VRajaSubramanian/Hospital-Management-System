@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RV Hospitals| RV Hospitals❤️‍🩹</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">                            
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <input type="checkbox" id="check">
+      <div class="logo"><a href="#">RV Hospitals❤️‍🩹</a></div>
+        <ul>
+          <label class="btn cancel" for="check"><i class="fa fa-times"></i></label>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#doctors">Specialities</a></li>
+          <a href="http://localhost:3000/feedback" class="bt" style="text-decoration: none;">Feedback</a>
+          <a href="/login" class="bt" style="text-decoration: none;">Login</a>
+          <a href="#book" class="bt" style="text-decoration: none;">Book Appointment</a>
+        </ul>
+        <label for="check" class="btn bars"><i class="fa fa-bars"></i></label>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="inner">
+        <div class="cont">
+           <center>
+            <h1 class="text first-text">RV Hospitals❤️‍🩹</h1>
+            <span class="text sec-text">Healthcare that Cares.</span>
+           </center>
+        </div>
+        <script>
+            const text = document.querySelector(".sec-text");
+            const textLoad = () => {
+                setTimeout(() => {
+                    text.textContent = "Healthcare that Cares.";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "A Quantum Leap for Healthcare.";
+                }, 6000);
+                setTimeout(() => {
+                    text.textContent = "Transforming Healthcare with Innovation.";
+                }, 12000);
+            }
+            textLoad();
+            setInterval(textLoad, 18000);
+        </script>  
+    </div>
+   </section>
+  <section id="services">
+    <div class="new" style="padding-left: 50px;padding-right: 50px;">
+      <center>
+        <h3 style="color: black;font-size: x-large;">Services Offered In <span style="color: #4070f4;">RV Hospitals❤️‍🩹</span></h3>
+      </center>
+      <div class="accordion" style="margin-top: 25px;">
+        <div class="accordion-content">
+          <header>
+            <span class="title">Orthopedics</span>
+            <i class="fa-solid fa-plus"></i>
+          </header> 
+          <p class="description">
+            Our orthopedic specialists are trained to treat conditions related to bones, muscles, and joints, including
+            fractures, joint pain, arthritis, and spinal disorders.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">Cardiology</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+          <p class="description">
+            Our expert cardiologists offer a wide range of diagnostic and treatment options for heart-related conditions
+            such as
+            coronary artery disease, heart attacks, arrhythmias, and heart failure.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">Neurology</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+    
+          <p class="description">
+            Our experienced neurologists provide comprehensive care for patients with neurological disorders such as
+            Parkinson's disease, epilepsy, stroke, and multiple sclerosis.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">Pediatrics</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+          <p class="description">
+            We have a dedicated team of pediatricians and child specialists who provide specialized care for infants,
+            children, and adolescents. Our services include routine checkups, vaccinations, and treatment for common
+            childhood
+            illnesses.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">Gynecology</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+          <p class="description">
+            Our gynecologists offer a range of services for women's reproductive health, including prenatal care,
+            infertility treatment, and menopause management.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">General Surgery</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+          <p class="description">
+            We have a team of skilled general surgeons who perform a variety of surgeries, including appendectomy,
+            hernia repair, gallbladder removal, and more.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">Emergency Medicine</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+          <p class="description">
+            We offer 24/7 emergency medical care for critical and life-threatening conditions such as heart
+            attacks, strokes, and accidents.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">Oncology</span>
+            <i class="fa-solid fa-plus"></i>
+          </header>
+          <p class="description">
+            Our oncologists offer advanced cancer treatments including chemotherapy, radiation therapy, and immunotherapy.
+            We also provide supportive care to manage the side effects of cancer treatment.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const accordionContent = document.querySelectorAll(".accordion-content");
+      accordionContent.forEach((item, index) => {
+        let header = item.querySelector("header");
+        header.addEventListener("click", () => {
+          item.classList.toggle("open");
+          let description = item.querySelector(".description");
+          if (item.classList.contains("open")) {
+            description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
+            item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+          } else {
+            description.style.height = "0px";
+            item.querySelector("i").classList.replace("fa-minus", "fa-plus");
+          }
+          removeOpen(index); //calling the funtion and also passing the index number of the clicked header
+        })
+      })
+      function removeOpen(index1) {
+        accordionContent.forEach((item2, index2) => {
+          if (index1 != index2) {
+            item2.classList.remove("open");
+            let des = item2.querySelector(".description");
+            des.style.height = "0px";
+            item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
+          }
+        })
+      }
+    </script>
+  </section>
+  <section id= "doctors">
+    <div class="doctors">
+      <center><h1 style="padding-top: 100px;padding-bottom: 20px;">Specialities in <span style="color: #4070f4;">RV Hospitals❤️‍🩹</span></h1></center>
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d1.svg" alt="" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Cardiology</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the diagnosis, treatment, and prevention of heart-related diseases.</p>
+                      <!-- <button class="button">View More</button> -->
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d2.png" alt="" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Neurology</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the diagnosis, treatment, and prevention of diseases and disorders of the nervous system, including the brain
+                      and spinal cord.</p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d3.png" alt="" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Dermatology</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the diagnosis, treatment, and prevention of diseases and disorders of the skin, hair, and nails.</p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d4.png" alt="" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Orthopedics</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the diagnosis, treatment, and prevention of diseases and injuries of the musculoskeletal system, including
+                      bones, joints, ligaments, tendons, and muscles.</p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d5.png" alt="" class="card-img">
+                      </div>
+                  </div>
+  
+                  <div class="card-content">
+                      <h2 class="name">Gynecology and Obstetrics</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the medical care of women, including pregnancy, childbirth, and the diagnosis and treatment of diseases and
+                      disorders of the female reproductive system.
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d6.png" alt="" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Gastroenterology</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the diagnosis, treatment, and prevention of diseases and disorders of the digestive system, including the
+                      stomach, intestines, liver, and pancreas.</p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d7.png" alt="" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Oncology</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the diagnosis, treatment, and prevention of cancer, including chemotherapy, radiation therapy, and surgical
+                      procedures.</p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d8.png" alt="" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Gastroenterology</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the diagnosis, treatment, and prevention of diseases and disorders of the digestive system, including the
+                      stomach, intestines, liver, and pancreas.</p>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                          <img src="/Images/d9.png" alt="" class="card-img">
+                      </div>
+                  </div>
+  
+                  <div class="card-content">
+                      <h2 class="name">Pediatrics</h2>
+                      <p class="description"><span class="tn">RV Hospitals</span> deals with the medical care of infants, children, and adolescents, including the diagnosis and treatment of diseases and
+                      disorders that affect this age group.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section id="book" style="margin-bottom: 150px;">
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img src="/Images/contact.png" alt="">
+        </div>
+      <form action="/send" method="post">
+        <div class="topic"><h1>Book Appointment</h1></div>
+        <div class="input-box">
+          <input type="text" required name="firstname" value=<%=firstname%>>
+          <label>Enter your name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" required name="email" value=<%=email%>>
+          <label>Enter your email</label>
+        </div>
+        <div class="input-box">
+          <input type="tel" required pattern="[0-9]{10}" name="phone" value=<%=phone%>>
+          <label>Enter Mobile Number</label>
+        </div>
+        
+        <div class="input-box">
+          <input type="datetime-local" required name="date">
+          <label>Appointment Date</label>
+        </div>
+        <div class="message-box">
+          <textarea name="message"></textarea>
+          <label>Symptoms</label>
+        </div>
+        <div class="input-box">
+          <input type="submit" value="Book Appointment">
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+</body>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="/new.js"></script> -->
+</html>

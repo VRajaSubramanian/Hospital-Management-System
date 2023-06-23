@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/css/font.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login| RV Hospitals❤️‍🩹</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+	<title>Login</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+	</style>
+	<style>
+		h1,h2,h3,.btn,label{
+			font-family: 'Poppins', sans-serif;
+			color: black;
+			font-size: 20px;
+		}
+		body {
+			overflow: hidden;
+			background-color: #4070f4;
+		}
+		input {
+			font-family: 'Poppins', sans-serif;
+			border-radius: 5px;
+			height: 30px;
+		}
+		.input-icons {
+			width: 100%;
+			margin-bottom: 10px;
+			justify-content: center;
+		}
+		.input-field{
+			padding-bottom: 10px;
+			width: 50%;
+			text-align: center;
+			padding: 8px 20px;
+		}
+		select{
+			width: 150px;
+			text-align: center;
+			border-radius: 5px;
+			height: 30px;
+			font-size: 15px;
+		}
+		label{
+			font-size: 18px;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		.input-icons i {
+			position: absolute;
+			margin: 10px;
+		}
+		.btn {
+			background-color: white;
+			color: black;
+			border: 2px solid #4070f4;
+			font-size: 14px;
+			font-weight: 500;
+			border-radius: 5px;
+			position: relative;
+			transition-duration: 0.6s;
+			padding: 5px 20px;
+			font-weight: bold;
+			margin-top: 15px;
+		}
+
+		.btn:hover {
+			background-color: #4070f4;
+			color: white;
+			border: 2px solid black;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.bl {
+			color: black;
+		}
+
+		.first {
+			border-radius: 36px;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+			padding: 50px;
+			margin-top: 50px;
+		}
+
+		.det {
+			max-width: 600px;
+			width: 100%;
+		}
+
+		@media (max-width: 750px) {
+			.det form {
+				overflow-y: scroll;
+			}
+
+			.det form::-webkit-scrollbar {
+				display: none;
+			}
+
+			form .first .input-icons {
+				width: calc(100% / 2 - 15px);
+			}
+		}
+
+		@media (max-width: 550px) {
+			form .fields .input-icons {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center">
+		<center>
+			<div class="long">
+				<h1 class="new" style="font-size: 25px;font-weight: 900;">HOSPITAL MANAGEMENT SYSTEM</h1>
+				<h3>Login To Continue</h3>
+			</div>
+			<div class="det">
+				<form action="/login" method="post">
+					<div class="first" style="background-color: white;">
+						<h2 class="bl">Enter Credentials</h2>
+						<div class="input-icons">
+							<i class="material-symbols-outlined">group</i>
+							<input class="input-field" type="text" placeholder="Enter your username" name="firstname"
+								required autofocus>
+						</div>
+						<div class="input-icons">
+							<i class="material-symbols-outlined">Password</i>
+							<input class="input-field" type="password" placeholder="Enter your password" name="password"
+								required>
+						</div>
+						<div class="input-icons">
+							<label>Designation</label>
+							<select type="text" name="designation" required>
+								<option>Admin</option>
+								<option>Patient</option>
+								<option>Doctor</option>
+							</select>
+						</div>
+						<div class="input-icons">
+							<button class="btn">Login</button>
+							<a href="/signup" class="btn" style="text-decoration: none;">Signup</a>
+							<a href="/" class="btn" style="text-decoration: none;">Home</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</center>
+	</div>
+</body>
+
+</html>

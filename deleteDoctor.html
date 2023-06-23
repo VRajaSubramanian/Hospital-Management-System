@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Delete Doctor</title>
+        <link rel="stylesheet" href="/css/font.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/adminstyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="side_bar">
+            <div class="side_bar_top">
+                <div class="side_bar_logo">
+                    <a href="/viewProfile">Admin</a>
+                </div>
+            </div>
+            <div class="side_bar_bottom">
+                <ul>
+                    <li><a href="/viewProfile">
+                            <span class="item">View Profile</span>
+                        </a></li>
+                    <li><a href="/addDoctor">
+                            <span class="item">Add Doctor</span>
+                        </a></li>
+                    <li><a href="/deleteDoctor" class="active">
+                            <span class="item">Delete Doctor</span>
+                        </a></li>
+                    <li><a href="/search">
+                            <span class="item">Edit Doctor</span>
+                        </a></li>
+                    <li><a href="/logout">
+                            <span class="item">Logout</span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="deleteFaculty">
+            <div class="inner">
+                <h1>Delete Doctor</h1>
+                <table class="tableView" border="0" width="100%">
+                    <form name="add_fac" method="post" action="/deleteDoctor">
+                        <tr>
+                            <td><b>Enter Email of Doctor to be deleted</b></td>
+                            <td><input type="text" name="email" id="email" placeholder="Email Id" class="in" autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button class="bt">Submit</button></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

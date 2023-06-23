@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="/css/font.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>RV Hospitals❤️‍🩹</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@200&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body{
+            overflow-x: hidden;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .bt {
+            background-color: white;
+            color: black;
+            border: 2px solid #4070f4;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition-duration: 0.6s;
+            padding: 5px 20px;
+            font-weight: bold;
+        }
+        .bt:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            border: 2px solid black;
+        }
+        body {
+            background: white;
+            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            align-items: center;
+            justify-content: center;
+        }
+        nav {
+            width: 100%;
+            padding: 12px 0;
+            background: #4070f4;
+            position: fixed;
+            z-index: 1000;
+        }
+        nav .menu {
+            width: 100%;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu .logo a {
+            font-size: 28px;
+            font-weight: 600;
+            text-decoration: none;
+            color: black;
+        }
+        .menu .logo a:hover {
+            color: white;
+        }
+        .button {
+            padding: 10px 22px;
+            margin-top: 15px;
+            border-radius: 36px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            background-color: #4070f4;
+            transition: all 0.9s ease;
+        }
+        .button:active {
+            transform: scale(3.9);
+        }
+        .button:before,.button:after {
+            position: absolute;
+            content: "";
+            width: 150%;
+            left: 50%;
+            height: 100%;
+            transform: translateX(-50%);
+            z-index: -1000;
+            background-repeat: no-repeat;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input,textarea {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 6px;
+            height: 40px;
+            width:500px
+        }
+        .co{
+            margin-left: 150px;
+            margin-right: 30px;
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+        .ten{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .button.animate::before {
+            top: -70%;
+            background-image: radial-gradient(circle, #4070f4 20%, transparent 20%),
+                radial-gradient(circle, transparent 20%, #4070f4 20%, transparent 30%),
+                radial-gradient(circle, #4070f4 20%, transparent 20%),
+                radial-gradient(circle, #4070f4 20%, transparent 20%),
+                radial-gradient(circle, transparent 10%, #4070f4 15%, transparent 20%),
+                radial-gradient(circle, #4070f4 20%, transparent 20%),
+                radial-gradient(circle, #4070f4 20%, transparent 20%),
+                radial-gradient(circle, #4070f4 20%, transparent 20%),
+                radial-gradient(circle, #4070f4 20%, transparent 20%);
+            background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+                10% 10%, 18% 18%;
+            animation: greentopBubbles ease-in-out 0.9s forwards infinite;
+        }
+        .new,.bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cont{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .accordion{
+            max-width: 530px;
+            width: 100%;
+            background: #FFF;
+            align-items: center;
+            margin: 0 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow:  0 0 4px rgba(0,0,0,0.2);
+        }
+        .accordion .accordion-content{
+            margin: 10px 0;
+            border-radius: 4px;
+            background: #FFF7F0;
+            border: 1px solid #FFD6B3;
+            overflow: hidden;
+        }
+        .new img{
+            scale: 125%;
+        }
+        .accordion-content:nth-child(2){
+            background-color: #F0FAFF;
+            border-color: #CCEEFF;
+        }
+        .accordion-content:nth-child(3){
+            background-color: #FFF0F3;
+            border-color: #FFCCD6;
+        }
+        .accordion-content:nth-child(4){
+            background-color: #F0F0FF;
+            border-color: #CCCCFF;
+        }
+         .accordion-content:nth-child(6){
+            background-color: #F0FAFF;
+            border-color: #CCEEFF;
+        }
+        .accordion-content:nth-child(7){
+            background-color: #FFF0F3;
+            border-color: #FFCCD6;
+        }
+        .accordion-content:nth-child(8){
+            background-color: #F0F0FF;
+            border-color: #CCCCFF;
+        }
+        .accordion-content.open{
+            padding-bottom: 10px;
+        }
+        .accordion-content header{
+            display: flex;
+            min-height: 50px;
+            padding: 0 15px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.2s linear;
+        }
+        .accordion-content.open header{
+            min-height: 35px;
+        }
+        .accordion-content header .title{
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+        .accordion-content header i{
+            font-size: 18px;
+            color: #333;
+        }
+        .accordion-content .description{
+            height: 0;
+            font-size: 12px;
+            color: #333;
+            font-weight: 400;
+            padding: 0 15px;
+            transition: all 0.2s linear;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center; 
+            overflow: hidden;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        span{
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .accordion .accordion-content{
+            font-size: larger;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4070f4;
+        }
+        .address {
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .address h2 {
+            margin-bottom: 10px;
+        }
+
+        .address p {
+            margin-bottom: 5px;
+        }
+        .cont .content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 20px;
+        }
+        @keyframes greentopBubbles {
+        0% {
+            background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+            40% 90%, 55% 90%, 70% 90%;
+        }
+        50% {
+            background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+            50% 50%, 65% 20%, 90% 30%;
+        }
+        100% {
+            background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+            50% 40%, 65% 10%, 90% 20%;
+            background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        }
+        }
+        .button.animate::after {
+        bottom: -70%;
+        background-image: radial-gradient(circle, #4070f4 20%, transparent 20%),
+            radial-gradient(circle, #4070f4 20%, transparent 20%),
+            radial-gradient(circle, transparent 10%, #4070f4 15%, transparent 20%),
+            radial-gradient(circle, #4070f4 20%, transparent 20%),
+            radial-gradient(circle, #4070f4 20%, transparent 20%),
+            radial-gradient(circle, #4070f4 20%, transparent 20%),
+            radial-gradient(circle, #4070f4 20%, transparent 20%);
+        background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+        animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+        }
+        .bt{
+            color: #fff;
+            background: #4070f4;
+            /* padding-left: 0; */
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            letter-spacing: 1px;
+            width: 500px;
+            transition: all 0.3s ease;
+            height: 50px;
+        }
+        .bt:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid #4070f4;
+        }
+        @keyframes greenbottomBubbles {
+        0% {
+            background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+            70% -10%, 70% 0%;
+        }
+        50% {
+            background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+            105% 0%;
+        }
+        100% {
+            background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+            110% 10%;
+            background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        }
+        }
+        @media (max-width:940px){
+            .img{
+                display: none;
+            }
+            .new{
+                align-items: center;
+                padding-left: 200px;
+            }
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn{
+            background-color: white;
+            color: black;
+            border: 2px solid #4070f4;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 5px;
+            position: relative;
+            transition-duration: 0.6s;
+            padding: 5px 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+    <body>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="#"><center><h3>RV Hospitals❤️‍🩹</h3></center></a>
+                </div>
+                <a href="#query" class="btn" style="text-decoration: none;">Contact Us</a>
+            </div>
+        </nav>
+        <div class="front">
+            <div class="inner" style="padding-top: 100px;">
+                <center>
+                    <h1 style="color: black;">Welcome To</h1>
+                    <h1 style="color: #4070f4;font-size:xx-large">RV HOSPITALS ❤️‍🩹</h1>
+                    <a href="/login" class="button" style="text-decoration: none;">Login</a>
+                    <script>
+                        const button = document.querySelector(".button");
+                        button.addEventListener("click", (e) => {
+                            e.preventDefault;
+                            button.classList.add("animate");
+                            setTimeout(() => {
+                                button.classList.remove("animate");
+                            }, 600);
+                        });
+                    </script>
+                </center>
+            </div>
+        </div>
+        <div class="middle" style="padding-top: 50px;justify-content: space-between;">
+            <center>
+                    <p>Welcome to RV Hospitals, where we strive to provide world-class healthcare services with a personal touch. Our dedicated
+                team of doctors and specialists are committed to delivering the highest standard of care to our patients. We understand
+                that seeking medical treatment can be stressful, which is why we make every effort to ensure your visit to our hospital
+                is as comfortable and reassuring as possible. We are here to listen, guide and support you on your journey to good
+                health. Thank you for choosing RV Hospitals as your healthcare partner.</p><br>
+                <span style="color: #4070f4;">Mission</span>
+                    <p>The mission of RV Hospitals is to provide high-quality, compassionate healthcare services to patients in a
+                state-of-the-art facility. The hospital is committed to advancing medical science and technology to deliver innovative
+                treatments and procedures that improve patient outcomes. RV Hospitals aims to be a leader in the healthcare industry and
+                a trusted partner to patients and their families.</p><br>
+                <span style="color: #4070f4;">Vision</span>
+                    <p>The vision of RV Hospitals is to be a world-class healthcare provider that delivers exceptional care and outcomes to
+                patients. The hospital is dedicated to staying at the forefront of medical advances and technology, and to providing a
+                welcoming, comfortable, and healing environment for patients. RV Hospitals seeks to create a culture of excellence in
+                patient care, research, and education, and to foster a commitment to continuous improvement among its staff and
+                partners.</p>
+            </center>
+        </div>
+        <div class="new" style="padding: 50px;padding-bottom: 100px;">
+            <div class="img">
+                <img src="/Images/doctor-removebg-preview.png" alt="">
+            </div>
+            <div class="accordion" style="margin-top: 50px;">
+                <center>
+                    <h3>Services Offered In <span style="color: #4070f4;">RV Hospitals❤️‍🩹</span></h3>
+                </center>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Orthopedics</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+            
+                    <p class="description">
+                        Our orthopedic specialists are trained to treat conditions related to bones, muscles, and joints, including
+                        fractures, joint pain, arthritis, and spinal disorders.
+                    </p>
+                </div>
+            
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Cardiology</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                    <p class="description">
+                        Our expert cardiologists offer a wide range of diagnostic and treatment options for heart-related conditions such as
+                        coronary artery disease, heart attacks, arrhythmias, and heart failure.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Neurology</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+            
+                    <p class="description">
+                        Our experienced neurologists provide comprehensive care for patients with neurological disorders such as
+                        Parkinson's disease, epilepsy, stroke, and multiple sclerosis.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Pediatrics</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+            
+                    <p class="description">
+                        We have a dedicated team of pediatricians and child specialists who provide specialized care for infants,
+                        children, and adolescents. Our services include routine checkups, vaccinations, and treatment for common childhood
+                        illnesses.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Gynecology</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                
+                    <p class="description">
+                        Our gynecologists offer a range of services for women's reproductive health, including prenatal care,
+                        infertility treatment, and menopause management.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">General Surgery</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                
+                    <p class="description">
+                        We have a team of skilled general surgeons who perform a variety of surgeries, including appendectomy,
+                        hernia repair, gallbladder removal, and more.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Emergency Medicine</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                    <p class="description">
+                        We offer 24/7 emergency medical care for critical and life-threatening conditions such as heart
+                        attacks, strokes, and accidents.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Oncology</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                    <p class="description">
+                        Our oncologists offer advanced cancer treatments including chemotherapy, radiation therapy, and immunotherapy.
+                        We also provide supportive care to manage the side effects of cancer treatment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom" style="padding-right: 200px;">
+            <div class="accordion" style="margin-left: 200px;">
+                <center>
+                    <h3>Specialities In <span style="color: #4070f4;">RV Hospitals❤️‍🩹</span></h3>
+                </center>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Advanced Cardiac Care</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                    <p class="description">
+                        RV Hospitals is equipped with state-of-the-art technology and staffed by a team of highly
+                        experienced cardiologists who specialize in treating complex cardiac conditions. We offer a range of advanced cardiac
+                        care services such as angioplasty, bypass surgery, and implantable cardiac devices.
+                    </p>
+                </div>
+            
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Joint Replacement</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                    <p class="description">
+                        Our orthopedic specialists have extensive experience in joint replacement surgeries, including knee
+                        replacement, hip replacement, and shoulder replacement. We use advanced techniques to ensure the best possible outcomes
+                        for our patients.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Neurosurgery</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+            
+                    <p class="description">
+                        RV Hospitals has a team of skilled neurosurgeons who specialize in treating conditions that affect the brain, spine, and
+                        nervous system. Our services include brain surgery, spine surgery, and treatment for conditions such as Parkinson's
+                        disease and epilepsy.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Robotic Surgery</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+            
+                    <p class="description">
+                        We offer advanced robotic surgery using the da Vinci Surgical System, which allows for minimally invasive procedures
+                        with increased precision and less downtime.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Cancer Care</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+            
+                    <p class="description">
+                        Our cancer center provides comprehensive care for patients with cancer, including advanced diagnostics,
+                        personalized treatment plans, and supportive care services. We offer state-of-the-art technology such as PET-CT scans
+                        and immunotherapy.
+                    </p>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                        <span class="title">Maternity Services</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+            
+                    <p class="description">
+                    RV Hospitals has a dedicated team of obstetricians and gynecologists who provide personalized care
+                    for expectant mothers and newborns. Our services include prenatal care, childbirth, and postnatal care.
+                    </p>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/Images/new-doctor.jpg" height="500px">
+            </div>
+        </div>
+        <script>
+            const accordionContent = document.querySelectorAll(".accordion-content");
+
+                accordionContent.forEach((item, index) => {
+                    let header = item.querySelector("header");
+                    header.addEventListener("click", () => {
+                        item.classList.toggle("open");
+
+                        let description = item.querySelector(".description");
+                        if (item.classList.contains("open")) {
+                            description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
+                            item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+                        } else {
+                            description.style.height = "0px";
+                            item.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                        }
+                        removeOpen(index); //calling the funtion and also passing the index number of the clicked header
+                    })
+                })
+
+                function removeOpen(index1) {
+                    accordionContent.forEach((item2, index2) => {
+                        if (index1 != index2) {
+                            item2.classList.remove("open");
+
+                            let des = item2.querySelector(".description");
+                            des.style.height = "0px";
+                            item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                        }
+                    })
+                }
+        </script>
+        <section id="query">
+            <div class="inside">
+                <center>
+                    <h1 style="margin-top: 50px;">Contact Us</h1>
+                    <h3>Tell Us Your Query</h3>
+                </center>
+                <div class="ten">
+                    <div class="image">
+                        <img src="/images/contact-removebg-preview.png">
+                    </div>
+                    <div class="co">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" id="submit-btn" class="bt">Submit</button>
+                            </div>
+                        </form>
+                        <script>
+                            const form = document.getElementById("contact-form");
+                            const submitButton = document.getElementById("submit-btn");
+
+                            form.addEventListener("submit", function (event) {
+                                event.preventDefault();
+                                const formData = new FormData(form);
+                                const xhr = new XMLHttpRequest();
+                                xhr.open("POST", "https://formspree.io/f/xjvdlkgg");
+                                xhr.setRequestHeader("Accept", "application/json");
+                                xhr.onreadystatechange = function () {
+                                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                                    if (xhr.status === 200) {
+                                        form.reset();
+                                        alert("Thank you for your message. We'll be in touch soon.");
+                                    } else {
+                                        alert("Oops! Something went wrong. Please try again.");
+                                    }
+                                };
+                                xhr.send(formData);
+                            });
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="last">
+            <h1>Our Location</h1>
+            <div class="cont">
+                <div class="content">
+                    <div class="image-box">
+                        <img src="/location.png" alt="">
+                    </div>
+                    <div class="address" style="padding-left: 200px;font-size: x-large;">
+                        <h2 style="color: #4070f4;">RV Hospitals</h2>
+                        <p>123 Main Street</p>
+                        <p>Bengaluru, Karnataka</p>
+                        <p>India - 560001</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>Creators</p>
+                <p>V.Raja Subramanian & K.Vijaya Gokul</p>
+                <p>&copy; 2023 RV Hospitals❤️‍🩹. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

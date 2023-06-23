@@ -1,0 +1,112 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+        color: black;
+    }
+    .inner h1{
+        color: #4070f4;
+        font-size: 20px;
+    }
+    body {
+        overflow-x: hidden;
+        overflow: hidden;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    .bt {
+        background-color: white;
+        color: black;
+        border: 2px solid #4070f4;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 5px;
+        transition-duration: 0.6s;
+        padding: 5px 20px;
+        font-weight: bold;
+    }
+
+    .bt:hover {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .item {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        border-radius: 20px;
+        display: flex;
+        height: calc(100vh - 40px);
+    }
+
+    .side_bar {
+        width: 250px;
+        background: #4070f4;
+        height: 96vh;
+        border-radius: 20px;
+        /* border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; */
+        border: 5px solid black;
+    }
+
+    .side_bar .side_bar_top .side_bar_logo {
+        padding-bottom: 5px;
+        border-bottom: 5px solid black;
+    }
+
+    .side_bar .side_bar_top .side_bar_logo a {
+        font-weight: 700;
+        font-size: 40px;
+        color: black;
+        margin: 20px;
+    }
+    .side_bar .side_bar_top .side_bar_logo a:hover{
+        color: white;
+    }    
+    .side_bar .side_bar_bottom ul li a {
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px;
+        /* padding-left: 30px; */
+    }
+
+    .side_bar .side_bar_bottom ul li a.active{
+        background: white;
+        color: #4070f4;
+        overflow: hidden;
+        border-right: 10px solid black;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .side_bar .side_bar_bottom ul li a:hover {
+        background: white;
+        color: #4070f4;
+        overflow: hidden;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .add {
+        resize: none;
+    }
+    .side_bar a {
+        text-decoration: none;
+    }
+    li {
+        list-style: none;
+    }
+    .inner {
+        margin-left: 100px;
+    }
+    .inner .addDoctor {
+        font-size: 12px;
+    }
+    .in,.add,textarea,select{
+        width: 350px;
+        margin: 6px;
+    }

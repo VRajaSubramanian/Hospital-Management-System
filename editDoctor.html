@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Doctor</title>
+    <link rel="stylesheet" type="text/css" href="/adminstyle.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/font.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="side_bar">
+            <div class="side_bar_top">
+                <div class="side_bar_logo">
+                    <a href="/viewProfile">Admin</a>
+                </div>
+            </div>
+            <div class="side_bar_bottom">
+                <ul>
+                    <li><a href="/viewProfile">
+                            <span class="item">View Profile</span>
+                        </a></li>
+                    <li><a href="/addDoctor">
+                            <span class="item">Add Doctor</span>
+                        </a></li>
+                    <li><a href="/deleteDoctor">
+                            <span class="item">Delete Doctor</span>
+                        </a></li>
+                    <li><a href="/search" class="active">
+                            <span class="item">Edit Doctor</span>
+                        </a></li>
+                    <li><a href="/logout">
+                            <span class="item">Logout</span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="addFaculty">
+                <h1 style="color:#4070f4;">Doctor Details</h1>
+                <table class="tableView" border="0" width="100%">
+                    <form name="add_fac" method="post" action="/editDoctor">
+                        <tr>
+                            <td><b>First name</b></td>
+                            <td><input type="text" name="firstname" id="firstname" placeholder="Enter your first name" class="in" value=<%=firstname%>></td>
+                        </tr>
+                        <tr>
+                            <td><b>Last name</b></td>
+                            <td><input type="text" name="secondname" id="secondname" placeholder="Enter your second name" class="in" value=<%=secondname%>></td>
+                        </tr>
+                        <tr>
+                            <td><b>Email</b></td>
+                            <td><input type="text" name="email" id="email" placeholder="Enter your email id" class="in" value=<%=email%>>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Date of Birth</b></td>
+                            <td><input type="date" name="dob" id="dob" class="in" value=<%=dob%>></td>
+                        </tr>
+                        <tr>
+                            <td><b>Specialization</b></td>
+                            <td><input type="text" name="education" id="education" placeholder="Enter your education" class="in" value=<%=education%>></td>
+                        </tr>
+                        <tr>
+                            <td><b>Gender</b></td>
+                            <td><input type="text" name="gender" id="gender" class="in" value=<%=gender%>></td>
+                        </tr>
+                        <tr>
+                            <td><b>Phone Number</b></td>
+                            <td><input type="text" name="phone" id="phone" placeholder="Enter your mobile number"
+                                    pattern="[0-9]{10}" class="in" value=<%=phone%>></td>
+                        </tr>
+                        <tr>
+                            <td><b>District</b></td>
+                            <td><input type="text" name="address" id="address" placeholder="Enter the address" class="in" value=<%=address%>></td>
+                        </tr>
+                        <tr>
+                            <td><button class="bt">Update</button></td>
+                        </tr>
+                    </form>
+                </table>
+        
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

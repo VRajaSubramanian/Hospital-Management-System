@@ -1,0 +1,213 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/css/font.css">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<title>Sign Up | RV Hospitals❤️‍🩹</title>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+	</style>
+	<style type="text/css">
+		*{
+    		box-sizing: content-box;
+    		font-family: 'Poppins', sans-serif;
+		}
+		input,select,a{
+			font-family: 'Poppins', sans-serif;
+			border-radius: 6px;
+			height: 30px;
+		}
+		textarea{
+			font-family: 'Poppins', sans-serif;
+			border-radius: 6px;
+		}
+		.btn{
+        	background-color: white;
+  			color: black;
+  			border: 2px solid #4070f4;
+  			font-size: 14px;
+    		font-weight: 500;
+  			border-radius: 5px;
+  			position: relative;
+  			transition-duration: 0.6s;
+  			padding: 5px 20px;
+			font-weight: bold;
+        }
+        .btn:hover{
+        	background-color: #4070f4;
+  			color: white;
+  			box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  		}
+		body{
+			min-height: 10vh;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		background: #4070f4;
+		}
+		.top{
+			position: relative;
+    		max-width: 1000px;
+    		border-radius: 36px;
+    		padding: 30px;
+    		margin: 0 15px;
+    		background-color: #fff;
+    		box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+		}
+		.fields{
+			display: flex;
+    		align-items: center;
+    		justify-content: space-between;
+    		flex-wrap: wrap;
+		}
+		.top form{
+    		position: relative;
+    		margin-top: 16px;
+    		background-color: #fff;
+    		overflow: hidden;
+		}
+		form .fields .input-field{
+    		display: flex;
+    		width: calc(100% / 2 - 25px);
+    		flex-direction: column;
+    		margin: 3px 0;
+		}
+        .button{
+            margin-top: 20px;
+        }
+        header{
+            margin-top: -30px;
+        }
+		@media (max-width: 750px) {
+    		.till form{
+        		overflow-y: scroll;
+    		}
+    		.till form::-webkit-scrollbar{
+       			display: none;
+    		}
+    		form .fields .input-field{
+        		width: calc(100% / 2 - 15px);
+    		}
+		}
+
+		@media (max-width: 550px) {
+    		form .fields .input-field{
+        		width: 100%;
+    		}
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<header><h2>Fillout The Details</h2></header>
+		<div class="till">
+			<div id="details">
+				<form name="signup" method="post" action="/signup">
+					<div class="fields">
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" name="firstname" pattern="[A-Za-z -]+" placeholder="Enter your Name (only alphabets)" required autofocus>
+                        </div>
+						<div class="input-field">
+							<label>Last Name</label>
+							<input type="text" name="secondname" pattern="[A-Za-z -]+" placeholder="Enter your Last Name (only alphabets)" required>
+						</div>
+						<div class="input-field">
+                            <label>Email</label>
+                            <input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" placeholder="Enter Birth Date" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter Mobile Number (only numbers)" required maxlength="10">
+                        </div>
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" required>
+                                <option disabled selected>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+						<div class="input-field">
+                            <label>Marital Status</label>
+                            <select name="marital" required>
+                                <option disabled selected>Select Status</option>
+                                <option>Single</option>
+                                <option>Married</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" name="occupation" placeholder="Enter your Occupation" required>
+                        </div>
+						<div class="input-field">
+                            <label>Aadhar Number</label>
+                            <input type="tel" name="aadhar" pattern="[0-9]{12}" placeholder="Enter Aadhar Number (only numbers)" required maxlength="12">
+                        </div>
+						<div class="input-field">
+                            <label>Address</label>
+                            <textarea rows="5" name="address" cols="5" placeholder="Enter Your Address" style="resize: none;"></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label>Blood Group</label>
+                            <select name="blood" required>
+                                <option disabled selected>Select Blood Group</option>
+                                <option selected>B+ve</option>
+								<option>B-ve</option>
+								<option>A+ve</option>
+								<option>A-ve</option>
+								<option>AB+ve</option>
+								<option>AB-ve</option>
+								<option>O+ve</option>
+								<option>O-ve</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Height(in cm)</label>
+                            <input type="number" name="height" placeholder="Enter your Height" required min="30" max="220">
+                        </div>
+                        <div class="input-field">
+                            <label>Weight(in kg)</label>
+                            <input type="number" name="weight" placeholder="Enter your Weight" required min="2" max="110">
+                        </div>
+                        <div class="input-field">
+                            <label>BMI</label>
+                            <input type="number" name="bmi" placeholder="Enter your BMI" required min="2" max="110">
+                        </div>
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="password" id="pass" name="password" placeholder="Enter your Password" pattern="^(?=.*[A-Z])(?=.*[0-9].*[0-9]).+$" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Confirm Password</label>
+                            <input type="password" id="confirm" name="confirmpassword" placeholder="Enter your Password Once Again" pattern="^(?=.*[A-Z])(?=.*[0-9].*[0-9]).+$" required>
+                        </div>
+						<div class="input-field">
+							<label>Designation</label>
+							<!-- <input type="text" name="designation" placeholder="Enter your Designation" required> -->
+							<select name="designation" required>
+								<option value="Patient">Patient</option>
+							</select>
+						</div>
+                        <div class="button">
+							<input type="reset" class="btn" value="Reset">
+							<input type="submit" class="btn" value="Submit">
+                            <a href="/login" class="btn" style="text-decoration: none;padding: 10px 25px;">Login</a>
+						</div>
+                    </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
